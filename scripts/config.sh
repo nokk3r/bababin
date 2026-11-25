@@ -5,8 +5,8 @@ SWIFT_MODULE="Bababin"
 APP_DISPLAY_NAME="Bababin"
 BUNDLE_ID="com.nokk3r.bababin"
 
-SOURCE_REPO="bababin/macos"
-RELEASE_REPO="bababin/macos"
+SOURCE_REPO="nokk3r/bababin"
+RELEASE_REPO="nokk3r/bababin"
 RELEASE_APP_NAME="Bababin"
 
 SOURCES_MODULE_DIR="Sources/Bababin"

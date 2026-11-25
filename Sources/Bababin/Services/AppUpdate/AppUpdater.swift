@@ -3,7 +3,7 @@ import Foundation
 /// Checks GitHub releases and can install a downloaded `.zip` asset.
 final class AppUpdater {
     static let shared = AppUpdater()
-    static let repository = "bababin/macos"
+    static let repository = "nokk3r/bababin"
 
     private init() {}
 

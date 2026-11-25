@@ -510,23 +510,12 @@ EOF
 }
 
 ensure_release_repo_ready() {
-  if gh repo view "$RELEASE_REPO" --json defaultBranchRef --jq '.defaultBranchRef.name' 2>/dev/null | grep -q .; then
+  if gh repo view "$RELEASE_REPO" --json name --jq .name >/dev/null 2>&1; then
     return 0
   fi
 
-  step "Initializing empty release repository $RELEASE_REPO"
-  local readme="# $RELEASE_APP_NAME — Releases
-
-Binary releases for the $RELEASE_APP_NAME macOS app.
-
-Download the latest release from https://github.com/$RELEASE_REPO/releases."
-
-  gh api \
-    --method PUT \
-    "repos/$RELEASE_REPO/contents/README.md" \
-    -f message="Initialize release repository" \
-    -f content="$(printf '%s' "$readme" | base64)" \
-    -f branch="main"
+  error_msg "GitHub repo $RELEASE_REPO not found. Releases are published to this repository."
+  exit 1
 }
 
 is_valid_version() {

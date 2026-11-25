@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/bababin/macos/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/v/release/bababin/macos?label=release&color=orange" alt="Release"></a>
+  <a href="https://github.com/nokk3r/bababin/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/v/release/nokk3r/bababin?label=release&color=orange" alt="Release"></a>
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
   <img src="https://img.shields.io/badge/macOS-15%2B-black?logo=apple" alt="macOS 15+">
   <img src="https://img.shields.io/badge/Swift-5.9-orange?logo=swift&logoColor=white" alt="Swift 5.9">
@@ -29,14 +29,14 @@
 
 ### Pre-built app (recommended)
 
-1. Download `Bababin-<version>.zip` or `.dmg` from [**Releases**](https://github.com/bababin/macos/releases).
+1. Download `Bababin-<version>.zip` or `.dmg` from [**Releases**](https://github.com/nokk3r/bababin/releases).
 2. Move `Bababin.app` to **Applications**.
 3. Open the app → **Settings → Connection** → **Connect Cursor**.
 4. Allow notifications when macOS asks.
 
 Optional: **Launch at login** in **Settings → About** (`SMAppService`, no LaunchAgent).
 
-The app auto-updates from [macos](https://github.com/bababin/macos) (`.zip` with `Bababin.app` inside).
+The app auto-updates from [nokk3r/bababin](https://github.com/nokk3r/bababin) (`.zip` with `Bababin.app` inside).
 
 ## Features
 
@@ -130,7 +130,7 @@ security delete-generic-password -s com.nokk3r.bababin
 ## Development
 
 ```bash
-git clone https://github.com/bababin/macos.git
+git clone https://github.com/nokk3r/bababin.git
 cd macos
 
 swift build -c release --product Bababin
@@ -141,9 +141,9 @@ swift build -c release --product Bababin
 swift run Bababin
 ```
 
-> `swift build` outputs a CLI binary, not a `.app` bundle. Use a [release build](https://github.com/bababin/macos/releases) for full menu bar + notifications.
+> `swift build` outputs a CLI binary, not a `.app` bundle. Use a [release build](https://github.com/nokk3r/bababin/releases) for full menu bar + notifications.
 
-[Report a bug](https://github.com/bababin/macos/issues)
+[Report a bug](https://github.com/nokk3r/bababin/issues)
 
 ## Uninstall
 
