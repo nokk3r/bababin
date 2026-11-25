@@ -1,0 +1,21 @@
+.DS_Store
+.build/
+*.xcodeproj
+*.xcworkspace
+DerivedData/
+dist/
+*.app/
+graphify-out/
+.swiftpm/xcode/xcuserdata/
+.idea
+
+# never commit local secrets / runtime state
+.env
+config.json
+state.json
+secrets.json
+journal.json
+
+scripts/lib/changelog/node_modules/
+scripts/lib/changelog/package-lock.json
+scripts/.venv/
