@@ -161,8 +161,6 @@ security delete-generic-password -s com.nokk3r.bababin 2>/dev/null || true
 
 Source code: [MIT License](LICENSE).
 
-© 2026 [Rete studio](https://github.com/bababin)
-
 ## Disclaimer
 
 **Bababin** is not affiliated with Anysphere / Cursor. Cursor® is a trademark of Anysphere. Usage data uses an **unofficial** API that may break when Cursor updates their backend.

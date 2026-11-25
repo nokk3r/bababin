@@ -79,10 +79,6 @@ struct AboutSettingsSection: View {
                 Text(licenseLinkLabel)
             }
             .buttonStyle(.plain)
-
-            Text(AppInfo.copyrightNotice)
-                .font(.caption)
-                .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
         .multilineTextAlignment(.center)

@@ -24,13 +24,6 @@ enum AppInfo {
         Bundle.main.bundleIdentifier ?? "com.nokk3r.bababin"
     }
 
-    static let companyName = "Rete studio"
-    static let copyrightYear = "2026"
-
-    static var copyrightNotice: String {
-        "© \(copyrightYear) \(companyName)"
-    }
-
     static var licenseURL: URL? {
         AppResources.url(forResource: "LICENSE", withExtension: "txt")
     }
